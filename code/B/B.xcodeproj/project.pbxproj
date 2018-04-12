@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F24E1B5207EE1C7004C3AEF /* C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F24E1B4207EE1C7004C3AEF /* C.framework */; };
 		1F81D892207E2ACD00A2F144 /* B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F81D888207E2ACD00A2F144 /* B.framework */; };
 		1F81D897207E2ACD00A2F144 /* BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F81D896207E2ACD00A2F144 /* BTests.swift */; };
 		1F81D899207E2ACD00A2F144 /* B.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F81D88B207E2ACD00A2F144 /* B.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F81D8A4207E2B0B00A2F144 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F81D8A3207E2B0B00A2F144 /* MyClass.swift */; };
-		1F81D8A9207E2CAA00A2F144 /* C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F81D8A8207E2CAA00A2F144 /* C.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,15 +25,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F24E1B3207EE1AB004C3AEF /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../../Cartfile; sourceTree = "<group>"; };
+		1F24E1B4207EE1C7004C3AEF /* C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = C.framework; path = ../../Carthage/Build/iOS/C.framework; sourceTree = "<group>"; };
 		1F81D888207E2ACD00A2F144 /* B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F81D88B207E2ACD00A2F144 /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
 		1F81D88C207E2ACD00A2F144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F81D891207E2ACD00A2F144 /* BTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F81D896207E2ACD00A2F144 /* BTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTests.swift; sourceTree = "<group>"; };
 		1F81D898207E2ACD00A2F144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F81D8A2207E2AE200A2F144 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		1F81D8A3207E2B0B00A2F144 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
-		1F81D8A8207E2CAA00A2F144 /* C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = C.framework; path = Carthage/Build/iOS/C.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F81D8A9207E2CAA00A2F144 /* C.framework in Frameworks */,
+				1F24E1B5207EE1C7004C3AEF /* C.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 		1F81D87E207E2ACD00A2F144 = {
 			isa = PBXGroup;
 			children = (
-				1F81D8A2207E2AE200A2F144 /* Cartfile */,
+				1F24E1B3207EE1AB004C3AEF /* Cartfile */,
 				1F81D88A207E2ACD00A2F144 /* B */,
 				1F81D895207E2ACD00A2F144 /* BTests */,
 				1F81D889207E2ACD00A2F144 /* Products */,
@@ -98,7 +98,7 @@
 		1F81D8A7207E2CAA00A2F144 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F81D8A8207E2CAA00A2F144 /* C.framework */,
+				1F24E1B4207EE1C7004C3AEF /* C.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/../../Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = B/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -400,6 +401,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/../../Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = B/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
